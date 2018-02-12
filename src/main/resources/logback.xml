@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <configuration scan="true" debug="true">
+        <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+                <layout class="pack.LevelPatternLayout">
+                    <defaultPattern>DEFAULT PATTERN %c - %m\n</defaultPattern>
+                    <debugPattern>DEBUG PATTERN %c - %m\n</debugPattern>
+                </layout>
+            </encoder>
+        </appender>
+        
+        <root level="DEBUG">
+            <appender-ref ref="CONSOLE" />
+        </root>
+    </configuration>
